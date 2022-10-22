@@ -20,7 +20,7 @@
                                 </div>
         
                                 <div class="row">
-                                    <label for="email" class="col-md-4 col-form-label">{{ __('Email/Username') }}</label>
+                                    <label for="email" class="col-md-6 col-form-label">{{ __('Email/Username') }}</label>
         
                                     {{-- <div class="col-md-6"> --}}
                                         <input id="email" type="email" class="form-control rounded-4 @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
@@ -34,7 +34,7 @@
                                 </div>
         
                                 <div class="row">
-                                    <label for="password" class="col-md-4 col-form-label">{{ __('Password') }}</label>
+                                    <label for="password" class="col-md-6 col-form-label">{{ __('Password') }}</label>
         
                                     {{-- <div class="col-md-6"> --}}
                                         <input id="password" type="password" class="form-control rounded-4 @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
@@ -57,6 +57,9 @@
                                             <a class="btn btn-link" href="{{ route('password.request') }}">
                                                 {{ __('Forgot Your Password?') }}
                                             </a>
+                                    @endif
+                                    @if (Route::has('register'))
+                                        <a href="{{ route('register') }}" class="btn btn-link">{{ __('Register') }}</a>
                                     @endif
                                 </div>
                             </form>
