@@ -12,7 +12,7 @@
                             <img src="{{ asset('images/logo.png') }}" alt="Peauty">
                         </div>
                         <div class="col-md-6">
-                            <form method="POST" action="{{ route('login') }}">
+                            <form method="POST" action="{{ route('register') }}">
                                 @csrf
 
                                 <div class="row text-center">

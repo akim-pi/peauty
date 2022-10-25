@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,10 +15,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', [DashboardController::class, 'index'])->name('dashboard')->middleware('auth');
+
+Route::prefix('user')->name('user.')->group(function (){
+    Route::get('/', [UserController::class, 'index'])->name('index');
+    Route::get('/edit', [UserController::class, 'edit'])->name('edit');
+    Route::post('/edit', [UserController::class, 'post-edit'])->name('post-edit');
 });
 
 Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
