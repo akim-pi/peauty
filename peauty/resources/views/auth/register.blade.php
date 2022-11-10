@@ -21,10 +21,10 @@
                                 
                                 <div class="row p-1">
                                     <div class="col-md-6">
-                                        <label for="nama" class="col-md-6 col-form-label">{{ __('Name') }}</label>
-                                        <input id="nama" type="text" class="form-control rounded-4 @error('nama') is-invalid @enderror" name="nama" value="{{ old('nama') }}" required autocomplete="nama" autofocus>
+                                        <label for="name" class="col-md-6 col-form-label">{{ __('Name') }}</label>
+                                        <input id="name" type="text" class="form-control rounded-4 @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
         
-                                        @error('nama')
+                                        @error('name')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
                                             </span>
@@ -54,10 +54,10 @@
                                         @enderror
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="phone" class="col-md-6 col-form-label">{{ __('Phone') }}</label>
-                                        <input id="phone" type="text" class="form-control rounded-4 @error('phone') is-invalid @enderror" name="phone" value="{{ old('phone') }}" required autocomplete="phone" autofocus>
+                                        <label for="phone_number" class="col-md-6 col-form-label">{{ __('Phone') }}</label>
+                                        <input id="phone_number" type="text" class="form-control rounded-4 @error('phone_number') is-invalid @enderror" name="phone_number" value="{{ old('phone_number') }}" required autocomplete="phone_number" autofocus>
         
-                                        @error('phone')
+                                        @error('phone_number')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
                                             </span>

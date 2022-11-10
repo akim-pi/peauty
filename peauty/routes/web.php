@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\RegisterUserController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Auth::routes();
+
 Route::get('/', [DashboardController::class, 'index'])->name('dashboard')->middleware('auth');
 
 Route::prefix('user')->name('user.')->group(function (){
@@ -23,4 +26,4 @@ Route::prefix('user')->name('user.')->group(function (){
     Route::post('/edit', [UserController::class, 'post-edit'])->name('post-edit');
 });
 
-Auth::routes();
+Route::post('/register-user', [RegisterUserController::class, 'create'])->name('register-user');
