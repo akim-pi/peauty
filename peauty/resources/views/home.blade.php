@@ -1,20 +1,20 @@
-@extends('layouts.main')
+@extends('layouts.home')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    {{ __('You are logged in!') }}
+<div class="container-fluid" style="border-radius: 30px">
+    <div class="row align-items-center justify-content-center vh-100">
+        <div class="col-lg-9">
+            <div class="shadow p-3 mb-10 bg-body" style="border-radius: 30px">
+                <div class="text-center">
+                    <img src="C:\Users\HP\Documents\Semester 7\MPPL\Projek\src\Nothing Found.png" alt=""
+                        style="height: 4.5cm" />
+                    <h3>You haven’t taken the test</h3>
+                </div>
+                <div class="tombol">
+                    <button type="button" class="btn btn-lg btn-custom">
+                        <img src="C:\Users\HP\Documents\Semester 7\MPPL\Projek\src\Face ID.png" alt=""
+                            style="height: 1.4cm; margin-left: -0.13cm" />
+                    </button>
                 </div>
             </div>
         </div>
