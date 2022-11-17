@@ -6,13 +6,12 @@
         <div class="col-lg-9">
             <div class="shadow p-3 mb-10 bg-body" style="border-radius: 30px">
                 <div class="text-center">
-                    <img src="C:\Users\HP\Documents\Semester 7\MPPL\Projek\src\Nothing Found.png" alt=""
-                        style="height: 4.5cm" />
+                    <img src="{{ asset('images/Nothing Found.png') }}" alt="" style="height: 4.5cm" />
                     <h3>You haven’t taken the test</h3>
                 </div>
                 <div class="tombol">
                     <button type="button" class="btn btn-lg btn-custom">
-                        <img src="C:\Users\HP\Documents\Semester 7\MPPL\Projek\src\Face ID.png" alt=""
+                        <img src="{{ asset('images/Face ID.png') }}" alt=""
                             style="height: 1.4cm; margin-left: -0.13cm" />
                     </button>
                 </div>

@@ -29,14 +29,14 @@
         <span class="tooltip" style="color: #fff">Search</span>
       </li> --}}
       <li>
-        <a href="home.html" class="active">
+        <a href="{{ route('dashboard') }}" @class(["active"=> request()->routeIs('dashboard')])>
           <i class="bx bxs-home" style="font-size: 0.7cm"></i>
           <span class="links_name">Home</span>
         </a>
         <span class="tooltip" style="color: #fff">Home</span>
       </li>
       <li>
-        <a href="profile.html">
+        <a href="{{ route('user.profil') }}" @class(["active"=> request()->routeIs('user.*')])>
           <i class="bx bxs-user" style="font-size: 0.7cm"></i>
           <span class="links_name">Profile</span>
         </a>
@@ -50,9 +50,13 @@
         <span class="tooltip" style="color: #fff">About</span>
       </li>
       <li>
-        <a href="logout.html">
+        <a href="{{ route('logout') }}" onclick="event.preventDefault();
+            document.getElementById('logout-form').submit();">
           <i class="bx bx-log-out" style="font-size: 0.7cm"></i>
           <span class="links_name">Log out</span>
+          <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+            @csrf
+          </form>
         </a>
         <span class="tooltip" style="color: #fff">Log out</span>
       </li>

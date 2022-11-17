@@ -22,8 +22,8 @@ Route::get('/', [DashboardController::class, 'index'])->name('dashboard')->middl
 
 Route::prefix('user')->name('user.')->group(function (){
     Route::get('/', [UserController::class, 'index'])->name('index');
-    Route::get('/edit', [UserController::class, 'edit'])->name('edit');
-    Route::post('/edit', [UserController::class, 'post-edit'])->name('post-edit');
+    Route::get('/profil', [UserController::class, 'profil'])->name('profil');
+    Route::post('/edit', [UserController::class, 'post_edit'])->name('post-edit');
 });
 
 Route::post('/register-user', [RegisterUserController::class, 'create'])->name('register-user');
