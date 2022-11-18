@@ -26,6 +26,7 @@ Sistem ini akan membantu pengguna untuk mempermudah pencarian produk skincare ya
 
 ## Features 
 | Feature | Function |
+|---------|----------|
 |Input Kondisi Kulit | Mengambil informasi kondisi kulit user yang akan digunakan untuk untuk pertimbangan rekomendasi produk. |
 |Rekomendasi Produk | Menggunakan data input user, sistem akan memberikan rekomendasi produk yang dapat digunakan oleh user untuk perawatan yang dilengkapi dengan kandungan dari skincare yang direkomendasikan.|
 | Tips | Sistem dapat memberi tips perawatan kulit, skincare, dan cara untuk mengatasi masalah kulit pada wajahnya  untuk pengguna sesuai kondisi yang dimasukkan. | 
