@@ -1,7 +1,20 @@
 /* Google Font Link */
 @font-face {
   font-family: "official";
-  src: url("D:/MPPL PROJECT/peauty-main/peauty-main/frontend/src/font/OfficialBook.ttf");
+  src: url("../official/OfficialBook.ttf");
+}
+
+.home-section {
+  position: absolute;
+  font-family: "official";
+  font-style: normal;
+  font-size: 18px;
+  line-height: 25px;
+  display: flex;
+  align-items: flex-end;
+  text-align: justify;
+  letter-spacing: 0.05em;
+  color: #000000;
 }
 
 .sidebar {
@@ -253,11 +266,20 @@ input #placeholder {
   width: 50px;
   background: none;
 }
+body {
+  height: 100%;
+  background: url("../src/background.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
 .home-section {
-  position: relative;
-  background: url("D:/MPPL PROJECT/peauty-main/peauty-main/frontend/src/img/background.png");
-  min-height: 100vh;
-  top: 0;
+  /* position: relative; */
+  /* background: url("C:/Users/HP/Documents/Semester7/MPPL/Projek/src/background.png"); */
+  /* height: 100%; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   left: 78px;
   width: calc(100% - 78px);
   transition: all 0.5s ease;
@@ -295,11 +317,12 @@ input #placeholder {
   width: 100px;
 }
 
-.text-center {
+.hasil {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  padding-top: 4cm;
+  padding-left: 0.2cm;
+  padding-right: 0.6cm;
 }
 
 .text-center h3 {
@@ -314,24 +337,41 @@ input #placeholder {
   color: white;
 }
 
-.btn-custom {
-  color: #ffffff;
-  background-color: #b1403a;
-  border-color: #bb8481;
+.btn {
+  background-color: #fff;
+  border: none;
+  color: #b1403a;
   box-shadow: 0 6px 20px 0 #9e5e5ef6;
-  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
   border-radius: 100px;
   margin-left: auto;
   margin-right: auto;
-  display: block;
-  margin-top: 2cm;
+  font-family: "official";
 }
 
-.btn-custom:hover,
+.btn:hover {
+  background-color: #b1403a;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  border-radius: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "official";
+  box-shadow: 0 6px 20px 0 #9e5e5ef6;
+}
+
+.next {
+  padding-bottom: 2%;
+}
+
 .open .dropdown-toggle.btn-custom {
   color: #ffffff;
-  background-color: #72130e;
-  border-color: #881913;
+  background: #72130e;
 }
 
 .sidebar li a.active {
@@ -377,136 +417,6 @@ h4 {
   font-weight: 600;
 }
 
-  .img-account-profile {
-    font-family: "Official";
-      height: 10rem;
-      margin-top: -140px;
-  }
-  .rounded-circle {
-    font-family: "Official";
-      border-radius: 50% !important;
-      padding-top: 0%;
-  }
-  .card {
-    font-family: "Official";
-      box-shadow: 0 0.15rem 1.75rem 0 rgb(33 40 50 / 15%);
-  }
-  .card .card-header {
-    font-family: "Official";
-      font-weight: 500;
-  }
-  .card-header:first-child {
-    font-family: "Official";
-      border-radius: 0.35rem 0.35rem 0 0;
-  }
-  .card-header {
-    font-family: "Official";
-      padding: 0.600rem 1.35rem;
-      margin-bottom: 0;
-      background-color: rgba(33, 40, 50, 0.03);
-      border-bottom: 1px solid rgba(33, 40, 50, 0.125);
-  }
-  .form-gender {
-    font-family: "Official";
-    font-size: 0.875rem;
-    font-weight: 300;
-  }
-  .form-control, .dataTable-input {
-    font-family: "Official";
-      display: block;
-      width: 100%;
-      padding: 0.500rem 1.125rem;
-      font-size: 0.875rem;
-      font-weight: 300;
-      line-height: 0;
-      color: #69707a;
-      background-color: #fff;
-      background-clip: padding-box;
-      border: 1px solid #c5ccd6;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-      border-radius: 0.50rem;
-      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  }
-  
-  .profile-button {
-    font-family: "Official";
-    background: #b1403a;
-    box-shadow: none;
-    border: none
-}
-
-.profile-button:hover {
-  font-family: "Official";
-    background: #da6c68;
-}
-
-.profile-button:focus {
-  font-family: "Official";
-    background: #b1403a;
-    box-shadow: none
-}
-
-.profile-button:active {
-  font-family: "Official";
-    background: #881913;
-    box-shadow: none
-}
-
-
-@media (max-width: 420px) {
-  .sidebar li .tooltip {
-    display: none;
-  }
-  .btn-custom {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin-bottom: -3cm;
-  }
-}
-@media (max-width: 550px) {
-  .btn-custom {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: -3cm;
-    display: block;
-  }
-}
-@media (max-width: 760px) {
-  .btn-custom {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: -3cm;
-    display: block;
-  }
-}
-@media (max-width: 1200px) {
-  .sidebar li .tooltip {
-    display: none;
-  }
-  .btn-custom {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin-bottom: -3cm;
-  }
-}
-@media (max-width: 912px) {
-  .btn-custom {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin-bottom: -3cm;
-  }
-}
-
-@media (max-width: 1000px) {
-  .btn-custom {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: -3cm;
-    display: block;
-  }
+.next {
+  text-align: center;
 }
