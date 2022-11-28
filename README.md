@@ -16,7 +16,7 @@ Masalah kulit pada wajah dapat disebabkan oleh berbagai faktor, seperti kebersih
 Lemon8 adalah aplikasi bagi komunitas untuk berbagi dan mengeksplorasi berbagai keragaman dalam bentuk tren gaya hidup saat ini. Pada aplikasi ini, ada sistem untuk melakukan pengecekan kondisi kulit dan akan ada fitur untuk memberikan hasil pengecekan melalui pendeteksian wajah pada fitur skin test yang nantinya diiringi dengan rekomendasi dan tips gaya hidup yang sehat.
 
 ## Purpose 
-Sistem ini akan membantu pengguna untuk mempermudah pencarian produk skincare yang sesuai dengan kebutuhan dan kondisi kulit wajahnya. Selain itu, pengguna juga dapat mengetahui cara merawat dan menjaga kulit wajah, serta cara mengatasi permasalahan kulit wajah yang dialaminya. Sistem yang dikembangkan akan mengambil input sederhana yang dimasukan oleh pengguna agar mudah dipahami oleh pengguna. 
+Sistem ini akan membantu pengguna untuk mempermudah pencarian produk skincare yang sesuai dengan kebutuhan dan kondisi kulit wajahnya. Selain itu, pengguna juga dapat mengetahui cara merawat dan menjaga kulit wajah, serta cara mengatasi permasalahan kulit wajah yang dialaminya. Sistem yang dikembangkan akan mengambil input sederhana yang dapat dipilih sesuai warna, kondisi dan jenis kulit pengguna.
 
 ## Stakeholder Involved
 | Stakeholder | Activity |
