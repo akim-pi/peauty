@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/c/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scan</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="scan-style.css" />
+    <!-- Boxicons CDN Link -->
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="profile">
+        <i><img src="D:\MPPL PROJECT\peauty-main\peauty-main\frontend\src\img\patrick.png" alt="" style="height: 1.25cm" /></i>
+        <div class="logo_name">Username</div>
+        <i class="bx bx-menu" id="btn" style="font-size: 0.9cm"></i>
+      </div>
+      <ul class="nav-list" style="margin-left: -30px">
+        <li>
+          <i class="bx bx-search" style="font-size: 0.7cm"></i>
+          <input class="teks" type="text" placeholder="Search..." style="background-color: rgb(218, 177, 177); color: #fff" />
+          <span class="tooltip" style="color: #fff">Search</span>
+        </li>
+        <li>
+          <a href="home.html" class="active">
+            <i class="bx bxs-home" style="font-size: 0.7cm"></i>
+            <span class="links_name">Home</span>
+          </a>
+          <span class="tooltip" style="color: #fff">Home</span>
+        </li>
+        <li>
+          <a href="profile.html">
+            <i class="bx bxs-user" style="font-size: 0.7cm"></i>
+            <span class="links_name">Profile</span>
+          </a>
+          <span class="tooltip" style="color: #fff">Profile</span>
+        </li>
+        <li>
+          <a href="about.html">
+            <i class="bx bxs-error-circle" style="font-size: 0.7cm"></i>
+            <span class="links_name">About</span>
+          </a>
+          <span class="tooltip" style="color: #fff">About</span>
+        </li>
+        <li>
+          <a href="logout.html">
+            <i class="bx bx-log-out" style="font-size: 0.7cm"></i>
+            <span class="links_name">Log out</span>
+          </a>
+          <span class="tooltip" style="color: #fff">Log out</span>
+        </li>
+        <li class="logo" style="bottom: 0.4cm">
+          <div class="logo-details">
+            <img src="D:\MPPL PROJECT\peauty-main\peauty-main\frontend\src\img\logo beu.png" alt="" />
+          </div>
+        </li>
+      </ul>
+    </div>
+    <section class="home-section">
+      <div class="container-fluid" style="border-radius: 30px; padding-top:0%; height:100%; margin-top: 5%;">
+        <div class="row align-items-center justify-content-center ">
+          <div class="col-lg-9">
+            <div class="shadow p-3 bg-body h-100" style="border-radius: 30px">
+              <div class="text-centera">
+                <h5  style="font-size: 22px; margin-left: 0.5cm; padding-top:0.7cm; font-weight:bolder">Kondisi Kulit</h5>
+              </div>           
+              <div class="tombol">
+                <button type="button" class="btn btn-lg btn-custom " style="color: #fff; margin-left: 15px; width: 140px; position: relative; border-color: rgb(211, 102, 102);">
+                  <input type="image" src="D:\MPPL PROJECT\jerawat.png" alt="" style="height: 0.95cm; position: relative;"/> 
+                  <span class="next" style="font-size: 18px; text-align: center;" name="Kondisi_Kulit" value="Jerawat">Jerawat</span>
+                </button>
+                <button type="button" class="btn btn-lg btn-custom " style="color: #fff; margin-left: 160px; margin-top: -60px; width: 160px; position: relative;">
+                  <input type="image" src="D:\MPPL PROJECT\flekhitam.png" alt="" style="height: 0.95cm; position: relative;"/> 
+                  <span class="next" style="font-size: 18px; text-align: center;" name="Kondisi_Kulit" value="Flet_Hitam">Flek Hitam</span>
+                </button>
+                <button type="button" class="btn btn-lg btn-custom " style="color: #fff; margin-left: 325px; margin-top: -60px; width: 150px; position: relative;">
+                  <input type="image" src="D:\MPPL PROJECT\poribesar.png" alt="" style="height: 0.95cm; position: relative;"/> 
+                  <span class="next" style="font-size: 18px; text-align: center;" name="Kondisi_Kulit" value="Pori_Besar">Pori Besar</span>
+                </button>
+                <button type="button" class="btn btn-lg btn-custom " style="color: #fff; margin-left: 15px; width: 170px; position: relative; ">
+                  <input type="image" src="D:\MPPL PROJECT\kulitkusam.png" alt="" style="height: 0.95cm; position: relative;"/> 
+                  <span class="next" style="font-size: 18px; text-align: center;" name="Kondisi_Kulit" value="Kulit_Kusam">Kulit Kusam</span>
+                </button>
+                <button type="button" class="btn btn-lg btn-custom " style="color: #fff; margin-left: 192px; margin-top: -60px; width: 180px; position: relative;">
+                  <input type="image" src="D:\MPPL PROJECT\kantungmata.png" alt="" style="height: 0.95cm; position: relative;"/> 
+                  <span class="next" style="font-size: 18px; text-align: center;" name="Kondisi_Kulit" value="Kantung_Mata">Kantung Mata</span>
+                </button>
+                <button type="button" class="btn btn-lg btn-custom " style="color: #fff; margin-left: 15px; width: 140px; position: relative;">
+                  <input type="image" src="D:\MPPL PROJECT\komedo.png" alt="" style="height: 0.95cm; position: relative;"/> 
+                  <span class="next" style="font-size: 18px; text-align: center;" name="Kondisi_Kulit" value="Komedo">Komedo</span>
+                </button>
+                <button type="button" class="btn btn-lg btn-custom " style="color: #fff; margin-left: 160px; margin-top: -60px; width: 160px; position: relative; border-color: rgb(211, 102, 102);">
+                  <input type="image" src="D:\MPPL PROJECT\darkcircle.png" alt="" style="height: 0.95cm; position: relative;"/> 
+                  <span class="next" style="font-size: 18px; text-align: center;" name="Kondisi_Kulit" value="Dark_Circle">Dark Circle</span>
+                </button>
+                </div>
+            </div>
+          </di>
+        </div>
+      </div>
+    <div class="next-round">
+      <a href="#" class="next round">&#8250;</a>
+    </div>
+    <script src="scan.js"></script>
+  </body>
+</html>
