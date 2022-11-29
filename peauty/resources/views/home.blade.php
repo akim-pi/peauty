@@ -11,24 +11,28 @@
                     <h3>You haven’t taken the test</h3>
                 </div>
                 @else
-                <div>
+                <div class="p-4">
                     <h1>Test Result</h1>
-                    @foreach ($history as $hs)
-                    {{-- <div class="card"> --}}
-                        <li>
-                            <a class="btn btn-danger" href="{{ route('user.hasil', ['id' => $hs->id]) }}">{{
+                    <hr>
+                    <div class="row">
+                        @foreach ($history as $hs)
+                        <div class="col-md-4 my-2">
+                            <a class="btn btn-danger w-100" href="{{ route('user.hasil', ['id' => $hs->id]) }}">{{
                                 $hs->created_at->format('d M Y') }}</a>
-                        </li>
-                        {{--
-                    </div> --}}
-                    @endforeach
+                        </div>
+                        @endforeach
+                    </div>
                 </div>
                 @endif
-                <div class="tombol">
-                    <a href="{{ route('user.rekomendasi') }}" type="button" class="btn btn-lg btn-custom">
-                        <img src="{{ asset('images/Face ID.png') }}" alt=""
-                            style="height: 1.4cm; margin-left: -0.13cm" />
-                    </a>
+                <div class="row">
+                    <div class="col-4"></div>
+                    <div class="col-4">
+                        <a href="{{ route('user.rekomendasi') }}" type="button" class="btn btn-lg btn-custom">
+                            <img src="{{ asset('images/Face ID.png') }}" alt=""
+                                style="height: 1.4cm; margin-left: -0.13cm" />
+                        </a>
+                    </div>
+                    <div class="col-4"></div>
                 </div>
             </div>
         </div>

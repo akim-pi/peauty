@@ -6,61 +6,89 @@
     <div class="container-fluid" style="border-radius: 30px; padding-top:0%; height:100%; margin-top: 5%;">
         <div class="row align-items-center justify-content-center vh-100">
             <div class="col-lg-9">
-                <div class="shadow p-3 my-2 bg-body h-100" style="border-radius: 30px">
+                <div class="shadow p-4 my-2 bg-body h-100" style="border-radius: 30px">
+                    <h1></h1>
                     <form action="{{ route('user.post-rekomendasi') }}" method="POST">
                         @csrf
-                        <div class="text-centera">
-                            <h5 style="font-size: 22px; margin-left: 0.5cm; padding-top:0.7cm; font-weight:bolder">Warna
-                                Kulit</h5>
-                        </div>
-                        <div class="tombol">
-                            <div class="col-md-8">
-                                <select name="warna_kulit" id="warna_kulit" class="form-select"
-                                    aria-label="Default select example">
-                                    <option selected value="Kulit Putih">Kulit Putih</option>
-                                    <option value="Kulit Putih">Kulit Kuning Langsat</option>
-                                    <option value="Kulit Putih">Kulit Sawo Matang</option>
-                                    <option value="Kulit Putih">Kulit Gelap</option>
-                                </select>
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-8">
+                                <div class="text-centera">
+                                    <h5
+                                        style="font-size: 22px; margin-left: 0.5cm; padding-top:0.7cm; font-weight:bolder">
+                                        Warna
+                                        Kulit</h5>
+                                </div>
+                                <div class="tombol">
+                                    <div class="col-md-12">
+                                        <select name="warna_kulit" id="warna_kulit" class="form-select"
+                                            aria-label="Default select example">
+                                            <option selected value="Kulit Putih">Kulit Putih</option>
+                                            <option value="Kulit Putih">Kulit Kuning Langsat</option>
+                                            <option value="Kulit Putih">Kulit Sawo Matang</option>
+                                            <option value="Kulit Putih">Kulit Gelap</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="col-2"></div>
                         </div>
-
-                        <div class="text-centera">
-                            <h5 style="font-size: 22px; margin-left: 0.5cm; padding-top:0.7cm; font-weight:bolder">Jenis
-                                Kulit</h5>
-                        </div>
-                        <div class="tombol">
-                            <div class="col-md-8">
-                                <select name="jenis_kulit" id="jenis_kulit" class="form-select"
-                                    aria-label="Default select example">
-                                    <option selected value="Kulit Normal">Kulit Normal</option>
-                                    <option value="Kulit Kering">Kulit Kering</option>
-                                    <option value="Kulit Berimnyak">Kulit Berminyak</option>
-                                    <option value="Kulit Kombinasi">Kulit Kombinasi</option>
-                                    <option value="Kulit Sensitif">Kulit Sensitif</option>
-                                </select>
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-8">
+                                <div class="text-centera">
+                                    <h5
+                                        style="font-size: 22px; margin-left: 0.5cm; padding-top:0.7cm; font-weight:bolder">
+                                        Jenis
+                                        Kulit</h5>
+                                </div>
+                                <div class="tombol">
+                                    <div class="col-md-12">
+                                        <select name="jenis_kulit" id="jenis_kulit" class="form-select"
+                                            aria-label="Default select example">
+                                            <option selected value="Kulit Normal">Kulit Normal</option>
+                                            <option value="Kulit Kering">Kulit Kering</option>
+                                            <option value="Kulit Berminyak">Kulit Berminyak</option>
+                                            <option value="Kulit Kombinasi">Kulit Kombinasi</option>
+                                            <option value="Kulit Sensitif">Kulit Sensitif</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="col-2"></div>
                         </div>
-
-                        <div class="text-centera">
-                            <h5 style="font-size: 22px; margin-left: 0.5cm; padding-top:0.7cm; font-weight:bolder">
-                                Kondisi Kulit</h5>
-                        </div>
-                        <div class="tombol">
-                            <div class="col-md-8">
-                                <select name="kondisi_kulit" id="kondisi_kulit" class="form-select"
-                                    aria-label="Default select example">
-                                    <option selected value="Jerawat">Jerawat</option>
-                                    <option value="Flek Hitam">Flek Hitam</option>
-                                    <option value="Pori Besar">Pori Besar</option>
-                                    <option value="Kulit Kusam">Kulit Kusam</option>
-                                    <option value="Kantung Mata">Kantung Mata</option>
-                                    <option value="Komedo">Komedo</option>
-                                    <option value="Dark Circle">Dark Circle</option>
-                                </select>
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-8">
+                                <div class="text-centera">
+                                    <h5
+                                        style="font-size: 22px; margin-left: 0.5cm; padding-top:0.7cm; font-weight:bolder">
+                                        Kondisi Kulit</h5>
+                                </div>
+                                <div class="tombol">
+                                    <div class="col-md-12">
+                                        <select name="kondisi_kulit" id="kondisi_kulit" class="form-select"
+                                            aria-label="Default select example">
+                                            <option selected value="Jerawat">Jerawat</option>
+                                            <option value="Flek Hitam">Flek Hitam</option>
+                                            <option value="Pori Besar">Pori Besar</option>
+                                            <option value="Kulit Kusam">Kulit Kusam</option>
+                                            <option value="Kantung Mata">Kantung Mata</option>
+                                            <option value="Komedo">Komedo</option>
+                                            <option value="Dark Circle">Dark Circle</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="col-2"></div>
                         </div>
-                        <button type="submit" class="my-2 btn btn-danger">Submit</button>
+                        <div class="row">
+                            <div class="col-4"></div>
+                            <div class="col-4">
+                                <button type="submit" class="my-2 btn btn-danger w-100 mt-4 p-2">Submit</button>
+                            </div>
+                            <div class="col-4"></div>
+                        </div>
                     </form>
                 </div>
             </div>
