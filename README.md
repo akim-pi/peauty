@@ -1,5 +1,11 @@
 # Be.U
 
+![Logo Transparent](https://user-images.githubusercontent.com/63986370/204554182-155044ab-868b-4d18-8a82-55c0af1bb094.png)
+
+Sistem Rekomendasi Skincare
+
+KOM330 Manajemen Proyek Perangkat Lunak (R1)
+
 ## Team Member
 | No | Nama | NIM | Role |
 | --- | --- | --- | --- |
@@ -29,6 +35,7 @@ Sistem ini akan membantu pengguna untuk mempermudah pencarian produk skincare ya
 
 ## User Story
 As a university student, I want to know my skincare product so that I can take care of my skin.
+
 As a university student, I want to know how to take care of my skin condition so that my skin is healthier.
 
 ## Ruang Lingkup
@@ -40,8 +47,18 @@ As a university student, I want to know how to take care of my skin condition so
 6. Pengguna tidak dapat konsultasi dengan dokter spesialis kulit atau ahli kecantikan.
 
 ## Kebutuhan Sistem
+| User | Fitur | Lingkungan |
+| --- | --- | --- |
+| Mahasiswa |  <ul><li>Input kondisi wajah</li><li>Rekomendasi produk</li><li>Rekomendasi tips</il></ul> | <ul><li>Windows 10</li><li>AMD Ryzhen 7</li><li>RAM 8GB</li><li>VSC</li><li>Laravel</li></ul> |
 
 ## Risiko
+| Resiko | Solusi |
+| --- | --- |
+| Waktu | Jalankan sesuai kemampuan namun hingga selesai |
+| Manajemen | Komunikasi dan penjadwalan yang baik |
+| Kemampuan | Belajar learning-by-doing |
+| Dana | Belajar learning-by-doing |
+| Kepuasan | Research ulang keperluan |
 
 ## Metodologi
 **Metodologi Scrum**
@@ -49,11 +66,23 @@ As a university student, I want to know how to take care of my skin condition so
 Metodologi ini membagikan task tim menjadi sprint yang akan dilakukan dalam jangka waktu tertentu, dengan setiap sprint dilakukan dalam waktu tersebut lalu diadakan sprint review. Setelah satu sprint diselesaikan, tim akan memilih task baru yang akan dilakukan di sprint selanjutnya
 
 ## Use Case
+![diagram-use case](https://user-images.githubusercontent.com/63986370/204552428-281f65c2-99e5-42c0-ad06-ca7d706d124c.png)
+
 
 ## Activity Diagram
+![diagram-activity diagram](https://user-images.githubusercontent.com/63986370/204552572-c0093623-3df1-4347-b977-79172c4257c0.png)
 
-# Entity Relational Diagram
+## Entity Relationship Diagram
+(![diagram-erd](https://user-images.githubusercontent.com/63986370/204552726-535f5012-e305-4d7f-94a5-2deab2162bdd.png)
+
 
 ## Class Diagram
+![diagram-class](https://user-images.githubusercontent.com/63986370/204552801-59535b95-4176-4e22-be6f-081f05b2b227.png)
 
+## Links
+Github : [Github](https://github.com/akim-pi/peauty)
 
+Trello : [Trello](https://trello.com/b/DmDXihDY/beu)
+
+## Product
+Produk dari proyek ini dapat diakses di
